@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>오디오 태그</title>
+</head>
+
+<body>
+	<!-- 
+		오디오 태그 
+		src: 음악 파일의 경로 지정
+		preload: 음악을 재생하기 전에 모두 불러올지 지정
+		autoplay: 음악을 자동 재생할지 지정
+		loop: 음악을 반복할 지 지정
+		controls: 음악 재생 도구를 출력할지지정
+	-->
+	<audio src="media/Kisma.mp3" controls="controls"></audio>
+	
+	<!--
+		음악 하나를 재생하는데 브라우저에서 지원하지 않는 포멧이 있을 경우
+		대신해서 재생할 파일 리스트를 지정해주는것
+		(음악 하나만 재생)
+		
+		type를 지정하는 이유: 지정하지 않으면 브라우저가 음악 파일을 내려 받은 위에 
+		재생가능한 파일인지 확인하기 때문에 네트워크가 낭비되므로 type속성을 사용하는 것이 좋다	
+		
+				IE 		Chrome		FireFox
+		MP3		o		  o			24버전 이후
+		OGG		x		  o			   o
+		WAV		x	      o			   o
+		
+	-->
+	<audio controls>
+		<source src="media/Kisma.mp3" type="audio/mp3" />
+		<source src="media/Kisma.ogg" type="audio/ogg" />
+	</audio>
+
+</body>
+</html>

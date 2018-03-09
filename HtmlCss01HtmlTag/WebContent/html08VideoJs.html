@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Plugin -->
+	<!-- 간단하게 가져다 쓰는 것들을 플러그인이라고 부른다 -->
+	
+	<title>Video.js 사용법</title>
+	<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+
+	<!-- If you'd like to support IE8 -->
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+<body>
+	<video controls width="900" poster="media/mcu.jpg"
+			class="video-js vjs-default-skin" data-setup="{}">
+		<source src="media/avengers.mp4" type="video/mp4" />
+		
+		<track kind="subtitles" src="media/track.srt" srclang="ko" label="한국어"  />
+		<track kind="subtitles" src="media/track.srt" srclang="en" label="영어"  />
+		<track kind="subtitles" src="media/track.srt" srclang="jp" label="일본어"  />
+		<track kind="subtitles" src="media/track.srt" srclang="ch" label="중국어" />
+	</video>
+	
+	
+	<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+	
+	
+	
+</body>
+</html>
