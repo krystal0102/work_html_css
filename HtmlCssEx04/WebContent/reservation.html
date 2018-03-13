@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>영화예매</title>
+</head>
+
+<body>
+	<h1>영화 예매</h1>
+	<h2>어벤져스</h2>
+	<img alt="포스터" src="img/TheAvengers2012Poster.jpg">
+	
+	<form action="/reservation.do" method="post">
+		<label for="site">상영관</label>
+		<select id="site">
+			<option>용산 아이파크몰 CGV</option>
+			<option>구로 CGV</option>
+			<option>영등포 CGV</option>
+		</select>
+		<label for="date">날짜선택</label>
+		<input type="date" id="date" value="date"><br>
+
+		<fieldset>
+			<legend>시간선택</legend>
+			<label><input type="radio" name="time" value="08:30" />08:30</label>
+    		
+    		<label><input type="radio" name="time" value="11:00" />11:00</label>
+    		
+    		<label><input type="radio" name="time" value="14:20" />14:20</label>
+    		
+    		<label><input type="radio" name="time" value="17:25" />17:25</label>
+    		
+    		<label><input type="radio" name="time" value="20:10" />20:10</label>
+    		
+    		<label><input type="radio" name="time" value="23:05" />23:05</label>
+
+		</fieldset>
+		
+		<label>인원<input type="number" min="1" max="300"></label>
+		
+		
+		<fieldset>
+			<legend>옵션</legend>
+			<label><input type="checkbox" name="menu" value="팝콘" />팝콘</label>
+			<label><input type="checkbox" name="menu" value="콜라" />콜라</label>
+			<label><input type="checkbox" name="menu" value="버터구이오징어" />버터구이오징어</label>
+		</fieldset>
+	</form>
+	
+
+</body>
+</html>
