@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">	
 	<title>비디오 태그</title>
 </head>
 
@@ -24,7 +25,11 @@
 		OGV		x         o            o
 	-->
 	<video controls width="800" poster="media/mcu.jpg">
-		<source src="media/avengers.mp4" type="video/mp4" />
+		<source src="media/developer.mp4" type="video/mp4" />
+		<source src="media/developer.webm" type="video/webm" />
+		
+		<track kind="subtitles" src="media/subtitles-ko.vtt" srclan="ko" label="한국어" default>
+		<track kind="subtitles" src="media/subtitles-en.vtt" srclan="en" label="영어">
 	</video>
 </body>
 </html>

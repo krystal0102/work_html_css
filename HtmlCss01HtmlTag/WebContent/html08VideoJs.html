@@ -3,7 +3,7 @@
 <head>
 	<!-- Plugin -->
 	<!-- 간단하게 가져다 쓰는 것들을 플러그인이라고 부른다 -->
-	
+	<meta charset="utf-8">	
 	<title>Video.js 사용법</title>
 	<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
 
@@ -14,12 +14,11 @@
 <body>
 	<video controls width="900" poster="media/mcu.jpg"
 			class="video-js vjs-default-skin" data-setup="{}">
-		<source src="media/avengers.mp4" type="video/mp4" />
+		<source src="media/developer.mp4" type="video/mp4" />
+		<source src="media/developer.webm" type="video/webm" />
 		
-		<track kind="subtitles" src="media/track.srt" srclang="ko" label="한국어"  />
-		<track kind="subtitles" src="media/track.srt" srclang="en" label="영어"  />
-		<track kind="subtitles" src="media/track.srt" srclang="jp" label="일본어"  />
-		<track kind="subtitles" src="media/track.srt" srclang="ch" label="중국어" />
+		<track kind="subtitles" src="media/subtitles-ko.vtt" srclan="ko" label="한국어" default>
+		<track kind="subtitles" src="media/subtitles-en.vtt" srclan="en" label="영어">
 	</video>
 	
 	
