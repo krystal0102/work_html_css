@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FontFamily</title>
+	<!-- 폰트는 컴퓨터에 설치된 폰트가 있어야 화면에 표시된다 -->
+	<style>
+		@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+		@import url(//fonts.googleapis.com/css?family=Nanum+Gothic);
+		.font-arial { font-family: Arial }
+		.font-roman { font-family: 'Times New Roman' }
+		
+		.font-notosans { font-family: 'Noto Sans KR', Arial, 'Times New Roman' }
+		
+		.font-notosans-thin { font-family: 'Noto Sans KR', sans-serif;
+							  font-style: normal;
+							  font-weight: 100; 
+		}
+		
+		.font-notosans-thin-italic { font-family: 'Noto Sans KR', sans-serif;
+							  font-style: normal;
+							  font-weight: 100; 
+		}
+		
+		.font-nanum {
+					font-family: 'Nanum Gothic', sans-serif;
+		}
+	
+							  
+	</style>
+</head>
+
+<body>
+	<h1 class="font-arial">Hello</h1>
+	<h1 class="font-roman">Hello</h1>
+	<h1>Hello</h1>
+	<h1 class="font-notosans">안녕하세요 Hello</h1>
+	<h1>안녕하세요 Hello</h1>
+	
+	<h1 class="font-nanum">이것은 나눔고딕</h1>
+
+</body>
+</html>

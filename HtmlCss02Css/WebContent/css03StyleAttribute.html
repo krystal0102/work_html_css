@@ -81,6 +81,37 @@
        		0.0 ~ 1.0 값을 사용 (투명도)
         */
         #box { visibility: visible; opacity: 0.2 }
+        
+        /* 
+        	박스 속성
+         */
+         .a-box {
+         	margin: 10px;				/* 바깥여백 */
+         	padding: 10px;				/* 안쪽여백 */
+         	width: 100px;	
+         	height: 100px;
+         	border: 10px solid black;	/* 경계선 두께, 선 종류, 색상 */
+         } 
+         
+         .a-box:first-child {
+         	background: blue;
+         	box-sizing: content-box;	/* content-box : 내부 내용물만큼을 박스크기로 지정 -> 100px  */
+         }
+         
+         .a-box:last-child {
+			background: orange;
+         	box-sizing: border-box;		/* border-box : 보더만큼을 박스크기로 지정 -> 100px  */
+		 }
+		 
+		 /* 
+		 	border-width, border-style, border-color
+		  */
+		  .b-box {
+		  	border-width: thick;
+		  	border-style: dashed;
+		  	border-color: black;
+		  }
+		  
      
 </style>
 </head>
@@ -106,5 +137,12 @@
    		<td>테스트용 테이블</td>
    	</tr>
    </table>
+   
+   <div>
+	 <div class="a-box"></div>
+  	 <div class="a-box"></div>
+   </div>
+   
+   <div class="a-box b-box"></div>
 </body>
 </html>
