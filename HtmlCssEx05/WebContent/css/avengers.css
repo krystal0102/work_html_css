@@ -1,0 +1,94 @@
+<style>
+
+	*{ font-size: 12px; width: 960px; margin: 0 auto; }	
+	h1 { font-size: 24px; text-shadow: 2px 2px #BDBDBD; text-align: center; margin-bottom: 10px;}
+	h2 { font-size: 20pxl; 
+		box-sizing: border-box; 
+		border-bottom: solid thin #aaa;
+		margin-left: 10px;
+		padding: 10px 10px 10px 10px; 
+		}
+		
+	li {
+		list-style: none;
+		box-sizing: content-box;
+		margin-bottom: 10px;
+		
+	}
+	
+	video {
+		width: 50%;
+		float: left;
+		margin: 0px 10px 10px 0px;
+	}
+
+		
+	#info {
+		width: 50%;
+		float: left;
+	}
+	
+	#wrap {
+		overflow: hidden;
+	}
+		
+	/* 
+		dl dt {
+			font-weight: bold;
+		}
+	 */
+	.bold { font-weight : bold }
+	
+	
+	
+	.bg-captainAmerica {
+    width: 127px; height: 135px;
+    background: url('./sprites.png') -10px -564px;
+    display: inline-block;
+	}
+	
+	.bg-et {
+    width: 700px; height: 364px;
+    background: url('./sprites.png') -10px -10px;
+    display: inline-block;
+    
+	}
+	
+	.bg-hawkEye {
+    width: 130px; height: 144px;
+    background: url('./sprites.png') -161px -394px;
+    display: inline-block;
+	}
+	
+	.bg-hulk {
+    width: 126px; height: 141px;
+    background: url('./sprites.png') -458px -394px;
+    display: inline-block;
+	}
+	
+	.bg-ironMan {
+    width: 127px; height: 142px;
+    background: url('./sprites.png') -311px -394px;
+    display: inline-block;
+	}
+	
+	.bg-nickFury {
+    width: 131px; height: 150px;
+    background: url('./sprites.png') -10px -394px;
+    display: inline-block;
+	}
+	
+	.bg-thor {
+    width: 127px; height: 129px;
+    background: url('./sprites.png') -157px -564px;
+    display: inline-block;
+	}
+	
+	.bg-blackWidow {
+    width: 124px; height: 138px;
+    background: url('./sprites.png') -730px -10px;
+    display: inline-block;
+	}
+
+		
+	</style>
